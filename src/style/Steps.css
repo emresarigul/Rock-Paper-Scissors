@@ -1,0 +1,296 @@
+.first-step-wrapper {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  background-image: url(../assets/images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+}
+@media (max-width: 575px) {
+  .first-step-wrapper {
+    background-size: 200px;
+    height: 250px;
+  }
+}
+.first-step-wrapper .rock-paper-scissors-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 575px) {
+  .first-step-wrapper .rock-paper-scissors-wrapper {
+    gap: 2rem;
+  }
+}
+.first-step-wrapper .rock-paper-scissors-wrapper img {
+  width: 60px;
+}
+@media (max-width: 575px) {
+  .first-step-wrapper .rock-paper-scissors-wrapper img {
+    width: 40px;
+  }
+}
+.first-step-wrapper .rock-paper-scissors-wrapper .rock {
+  background-color: #fff;
+  width: 170px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 20px solid hsl(349deg, 71%, 52%);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 5rem;
+}
+@media (max-width: 575px) {
+  .first-step-wrapper .rock-paper-scissors-wrapper .rock {
+    width: 125px;
+    height: 125px;
+    border: 15px solid hsl(349deg, 71%, 52%);
+  }
+}
+.first-step-wrapper .rock-paper-scissors-wrapper .paper {
+  background-color: #fff;
+  width: 170px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 20px solid hsl(230deg, 89%, 62%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media (max-width: 575px) {
+  .first-step-wrapper .rock-paper-scissors-wrapper .paper {
+    width: 125px;
+    height: 125px;
+    border: 15px solid hsl(230deg, 89%, 62%);
+  }
+}
+.first-step-wrapper .rock-paper-scissors-wrapper .scissors {
+  background-color: #fff;
+  width: 170px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 20px solid hsl(39deg, 89%, 49%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media (max-width: 575px) {
+  .first-step-wrapper .rock-paper-scissors-wrapper .scissors {
+    width: 125px;
+    height: 125px;
+    border: 15px solid hsl(39deg, 89%, 49%);
+  }
+}
+
+/*second steps*/
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .flex-container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 575px) {
+  .flex-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+.flex-container img {
+  width: 90px;
+}
+@media (max-width: 575px) {
+  .flex-container img {
+    width: 40px;
+  }
+}
+.flex-container .your-hand {
+  text-align: center;
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  .flex-container .your-hand {
+    order: 1;
+    flex-basis: unset;
+  }
+}
+.flex-container .your-hand .heading {
+  margin-bottom: 3rem;
+  font-size: 23px;
+  letter-spacing: 5px;
+}
+@media (max-width: 575px) {
+  .flex-container .your-hand .heading {
+    order: 2;
+    font-size: 16px;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 575px) {
+  .flex-container .your-hand .your-selected-hand {
+    order: 1;
+  }
+}
+.flex-container .rock {
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 25px solid hsl(349deg, 71%, 52%);
+  border-radius: 50%;
+  z-index: 10;
+  position: relative;
+}
+@media (max-width: 575px) {
+  .flex-container .rock {
+    width: 100px;
+    height: 100px;
+    border: 10px solid hsl(349deg, 71%, 52%);
+  }
+}
+.flex-container .paper {
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 25px solid hsl(230deg, 89%, 62%);
+  border-radius: 50%;
+  z-index: 10;
+  position: relative;
+}
+@media (max-width: 575px) {
+  .flex-container .paper {
+    width: 100px;
+    height: 100px;
+    border: 10px solid hsl(230deg, 89%, 62%);
+  }
+}
+.flex-container .scissors {
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 25px solid hsl(39deg, 89%, 49%);
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+}
+@media (max-width: 575px) {
+  .flex-container .scissors {
+    width: 100px;
+    height: 100px;
+    border: 10px solid hsl(39deg, 89%, 49%);
+  }
+}
+.flex-container .resut-play-again {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 100px;
+}
+@media (max-width: 575px) {
+  .flex-container .resut-play-again {
+    order: 3;
+    flex-basis: unset;
+    margin: auto;
+    margin-top: -1.5rem;
+  }
+}
+.flex-container .resut-play-again div {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+.flex-container .resut-play-again button {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+@media (max-width: 575px) {
+  .flex-container .resut-play-again button {
+    width: 200px;
+  }
+}
+.flex-container .show {
+  display: flex;
+}
+.flex-container .do-not-show {
+  display: none;
+}
+.flex-container .opponent-hand {
+  position: relative;
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  .flex-container .opponent-hand {
+    order: 2;
+    flex-basis: unset;
+  }
+}
+.flex-container .opponent-hand .heading {
+  margin-bottom: 3rem;
+  font-size: 23px;
+  letter-spacing: 5px;
+}
+@media (max-width: 575px) {
+  .flex-container .opponent-hand .heading {
+    order: 2;
+    font-size: 16px;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  .flex-container .opponent-hand .heading-relative {
+    position: relative;
+    bottom: -5.1rem;
+  }
+}
+@media (max-width: 575px) {
+  .flex-container .opponent-hand .opponent-selected-hand {
+    order: 1;
+  }
+}
+.flex-container .opponent-hand .dark-circle {
+  width: 220px;
+  height: 220px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+}
+@media (max-width: 575px) {
+  .flex-container .opponent-hand .dark-circle {
+    width: 100px;
+    height: 100px;
+    bottom: unset;
+    top: 0;
+  }
+}/*# sourceMappingURL=Steps.css.map */

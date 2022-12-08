@@ -1,0 +1,50 @@
+@import "mixin";
+@import "breakpoints";
+
+.main-wrapper {
+  padding-top: 3rem;
+  @include md {
+    margin: 0 30px;
+  }
+  .table-wrapper {
+    max-width: 950px;
+    margin: auto;
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .game-logo {
+      @include sm {
+        max-width: 90px;
+      }
+    }
+
+    .score-table {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px 50px;
+      border-radius: 10px;
+      @include sm {
+        padding: 10px 30px;
+      }
+      div {
+        color: hsl(229, 64%, 46%);
+        font-size: 20px;
+        @include sm {
+          font-size: 16px;
+        }
+      }
+      .score {
+        color: hsl(229, 25%, 31%);
+        font-size: 65px;
+        font-weight: 700;
+        @include sm {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

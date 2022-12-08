@@ -1,0 +1,127 @@
+@import "mixin";
+@import "breakpoints";
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overlay {
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  @include sm {
+    background-color: #fff;
+    opacity: 1;
+  }
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 100vh;
+
+  .game-info-button {
+    position: fixed;
+    right: 80px;
+    bottom: 40px;
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px 45px;
+    cursor: pointer;
+    @include sm {
+      position: fixed;
+      width: 150px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+    }
+  }
+
+  .game-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding: 60px;
+    border-radius: 10px;
+    z-index: 20;
+    @include sm {
+      width: 100%;
+    }
+
+    h3 {
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      font-size: 30px;
+      @include sm {
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+    .close-button {
+      position: absolute;
+      right: 30px;
+      top: 38px;
+      cursor: pointer;
+      @include sm {
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: unset;
+        right: unset;
+        bottom: -100px;
+      }
+    }
+    .rule-image {
+      margin-top: 60px;
+    }
+  }
+
+  .show-rules {
+    display: block;
+  }
+
+  .do-not-show-rules {
+    display: none;
+  }
+}

@@ -1,0 +1,53 @@
+.main-wrapper {
+  padding-top: 3rem;
+}
+@media (max-width: 767px) {
+  .main-wrapper {
+    margin: 0 30px;
+  }
+}
+.main-wrapper .table-wrapper {
+  max-width: 950px;
+  margin: auto;
+  border: 3px solid hsl(217deg, 16%, 45%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+@media (max-width: 575px) {
+  .main-wrapper .table-wrapper .game-logo {
+    max-width: 90px;
+  }
+}
+.main-wrapper .table-wrapper .score-table {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 50px;
+  border-radius: 10px;
+}
+@media (max-width: 575px) {
+  .main-wrapper .table-wrapper .score-table {
+    padding: 10px 30px;
+  }
+}
+.main-wrapper .table-wrapper .score-table div {
+  color: hsl(229deg, 64%, 46%);
+  font-size: 20px;
+}
+@media (max-width: 575px) {
+  .main-wrapper .table-wrapper .score-table div {
+    font-size: 16px;
+  }
+}
+.main-wrapper .table-wrapper .score-table .score {
+  color: hsl(229deg, 25%, 31%);
+  font-size: 65px;
+  font-weight: 700;
+}
+@media (max-width: 575px) {
+  .main-wrapper .table-wrapper .score-table .score {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=ScoreTable.css.map */
