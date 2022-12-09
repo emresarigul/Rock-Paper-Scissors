@@ -107,9 +107,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 4rem;
     @include sm {
       order: 1;
       flex-basis: unset;
+      margin-bottom: 0;
     }
     .heading {
       margin-bottom: 3rem;
@@ -130,8 +132,8 @@
   }
   .rock {
     background-color: #fff;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,8 +149,8 @@
   }
   .paper {
     background-color: #fff;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,8 +166,8 @@
   }
   .scissors {
     background-color: #fff;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,9 +227,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 4rem;
     @include sm {
       order: 2;
       flex-basis: unset;
+      margin-bottom: 0;
     }
 
     .heading {
