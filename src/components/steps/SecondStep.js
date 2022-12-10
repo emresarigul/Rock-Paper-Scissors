@@ -83,7 +83,11 @@ const SecondStep = ({ selected, imgArr, setFirstStep, setScore, score }) => {
     <div className="flex-container">
       <div className="your-hand">
         <div className="heading">YOU PICKED</div>
-        <div className="your-selected-hand">
+        <div
+          className={`your-selected-hand ${
+            result.winOrLose === "YOU WIN" ? "winner-effect" : null
+          }`}
+        >
           <div className={selected.selectedHand}>
             <img src={selected.selectedImage} alt={selected.selectedHand} />
           </div>
@@ -108,7 +112,11 @@ const SecondStep = ({ selected, imgArr, setFirstStep, setScore, score }) => {
           THE HOUSE PICKED
         </div>
         <div className="dark-circle"></div>
-        <div className="opponent-selected-hand">
+        <div
+          className={`opponent-selected-hand ${
+            result.winOrLose === "YOU LOSE" ? "winner-effect" : null
+          }`}
+        >
           <div className={opponentHand.opponentHandClassName}>
             <img
               src={opponentHand.opponendHandImage}
