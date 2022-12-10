@@ -229,9 +229,14 @@
       border-radius: 10px;
       border: none;
       cursor: pointer;
-      font-size: 20px;
+      font-size: 18px;
+      letter-spacing: 2px;
+      color: hsl(229, 25%, 31%);
       @include sm {
         width: 200px;
+      }
+      &:hover {
+        color: hsl(349, 71%, 52%);
       }
     }
   }

@@ -93,6 +93,7 @@ img {
       left: 30px;
       top: 30px;
       font-size: 30px;
+      color: hsl(229, 25%, 31%);
       @include sm {
         left: 50%;
         transform: translate(-50%, 0);

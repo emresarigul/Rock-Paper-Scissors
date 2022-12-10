@@ -252,12 +252,17 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: hsl(229deg, 25%, 31%);
 }
 @media (max-width: 575px) {
   .flex-container .resut-play-again button {
     width: 200px;
   }
+}
+.flex-container .resut-play-again button:hover {
+  color: hsl(349deg, 71%, 52%);
 }
 .flex-container .show {
   display: flex;

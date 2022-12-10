@@ -96,6 +96,7 @@ img {
   left: 30px;
   top: 30px;
   font-size: 30px;
+  color: hsl(229deg, 25%, 31%);
 }
 @media (max-width: 575px) {
   .container .game-info h3 {
