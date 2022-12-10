@@ -8,10 +8,8 @@
   background-image: url(../assets/images/bg-triangle.svg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 350px;
   @include sm {
-    background-size: 200px;
-    height: 250px;
+    background-size: 250px;
   }
   .rock-paper-scissors-wrapper {
     display: flex;
@@ -46,6 +44,7 @@
         height: 125px;
         border: 15px solid hsl(349, 71%, 52%);
         box-shadow: inset 0px 2px 0 2px rgba(0, 0, 0, 0.2);
+        margin-bottom: 0;
       }
     }
     .paper {

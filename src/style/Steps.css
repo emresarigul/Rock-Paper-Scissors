@@ -5,12 +5,10 @@
   background-image: url(../assets/images/bg-triangle.svg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 350px;
 }
 @media (max-width: 575px) {
   .first-step-wrapper {
-    background-size: 200px;
-    height: 250px;
+    background-size: 250px;
   }
 }
 .first-step-wrapper .rock-paper-scissors-wrapper {
@@ -51,6 +49,7 @@
     height: 125px;
     border: 15px solid hsl(349deg, 71%, 52%);
     box-shadow: inset 0px 2px 0 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
   }
 }
 .first-step-wrapper .rock-paper-scissors-wrapper .paper {
