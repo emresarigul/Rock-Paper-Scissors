@@ -124,12 +124,14 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 4rem;
+  transform: translateX(150px);
 }
 @media (max-width: 575px) {
   .flex-container .your-hand {
     order: 1;
     flex-basis: unset;
     margin-bottom: 0;
+    transform: translateX(0);
   }
 }
 .flex-container .your-hand .heading {
@@ -265,9 +267,13 @@
 }
 .flex-container .show {
   display: flex;
+  transition: 0.3s ease-in-out;
+  visibility: visible;
+  opacity: 1;
 }
 .flex-container .do-not-show {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 .flex-container .opponent-hand {
   position: relative;
@@ -276,12 +282,14 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 4rem;
+  transform: translateX(-150px);
 }
 @media (max-width: 575px) {
   .flex-container .opponent-hand {
     order: 2;
     flex-basis: unset;
     margin-bottom: 0;
+    transform: translateX(0);
   }
 }
 .flex-container .opponent-hand .heading {
@@ -328,4 +336,8 @@
     bottom: unset;
     top: 0;
   }
+}
+.flex-container .no-translate {
+  transform: translateX(0);
+  transition: 0.3s ease-in-out;
 }/*# sourceMappingURL=Steps.css.map */

@@ -76,17 +76,21 @@ const SecondStep = ({ selected, imgArr, setFirstStep, setScore, score }) => {
   useEffect(() => {
     setTimeout(() => {
       resultHandler();
-    }, 100);
+    }, 500);
   }, [opponentHand]);
 
   return (
     <div className="flex-container">
-      <div className="your-hand">
+      <div
+        className={`your-hand ${
+          result.winOrLose !== null ? "no-translate" : ""
+        }`}
+      >
         <div className="heading">YOU PICKED</div>
         <div
           className={`your-selected-hand ${
-            result.winOrLose === "YOU WIN" ? "winner-effect" : null
-          }`}
+            result.winOrLose === "YOU WIN" ? "winner-effect" : ""
+          } `}
         >
           <div className={selected.selectedHand}>
             <img src={selected.selectedImage} alt={selected.selectedHand} />
@@ -103,15 +107,23 @@ const SecondStep = ({ selected, imgArr, setFirstStep, setScore, score }) => {
           PLAY AGAIN
         </button>
       </div>
-      <div className="opponent-hand">
+      <div
+        className={`opponent-hand ${
+          result.winOrLose !== null ? "no-translate" : ""
+        }`}
+      >
         <div
           className={`heading ${
             opponentHand.opponendHandImage !== null ? "" : "heading-relative"
-          }`}
+          } `}
         >
           THE HOUSE PICKED
         </div>
-        <div className="dark-circle"></div>
+        <div
+          className={`dark-circle  ${
+            result.winOrLose !== null ? "no-translate" : ""
+          }`}
+        ></div>
         <div
           className={`opponent-selected-hand ${
             result.winOrLose === "YOU LOSE" ? "winner-effect" : null

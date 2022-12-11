@@ -113,10 +113,12 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 4rem;
+    transform: translateX(150px);
     @include sm {
       order: 1;
       flex-basis: unset;
       margin-bottom: 0;
+      transform: translateX(0);
     }
     .heading {
       margin-bottom: 3rem;
@@ -136,6 +138,7 @@
       }
     }
   }
+
   .rock {
     background-color: #fff;
     width: 220px;
@@ -242,10 +245,14 @@
 
   .show {
     display: flex;
+    transition: 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
   }
 
   .do-not-show {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
   }
 
   .opponent-hand {
@@ -255,10 +262,12 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 4rem;
+    transform: translateX(-150px);
     @include sm {
       order: 2;
       flex-basis: unset;
       margin-bottom: 0;
+      transform: translateX(0);
     }
 
     .heading {
@@ -303,5 +312,9 @@
         top: 0;
       }
     }
+  }
+  .no-translate {
+    transform: translateX(0);
+    transition: 0.3s ease-in-out;
   }
 }
