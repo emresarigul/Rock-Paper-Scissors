@@ -126,7 +126,7 @@ const SecondStep = ({ selected, imgArr, setFirstStep, setScore, score }) => {
         ></div>
         <div
           className={`opponent-selected-hand ${
-            result.winOrLose === "YOU LOSE" ? "winner-effect" : null
+            result.winOrLose === "YOU LOSE" ? "winner-effect" : ""
           }`}
         >
           <div className={opponentHand.opponentHandClassName}>

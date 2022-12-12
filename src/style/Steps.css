@@ -19,7 +19,7 @@
 }
 @media (max-width: 575px) {
   .first-step-wrapper .rock-paper-scissors-wrapper {
-    gap: 2rem;
+    gap: 3rem;
   }
 }
 .first-step-wrapper .rock-paper-scissors-wrapper img {
@@ -101,16 +101,21 @@
 @media (max-width: 767px) {
   .flex-container {
     padding: 0 30px;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 575px) {
   .flex-container {
-    flex-wrap: wrap;
     gap: 1rem;
   }
 }
 .flex-container img {
   width: 90px;
+}
+@media (max-width: 767px) {
+  .flex-container img {
+    width: 50px;
+  }
 }
 @media (max-width: 575px) {
   .flex-container img {
@@ -126,18 +131,27 @@
   margin-bottom: 4rem;
   transform: translateX(150px);
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .flex-container .your-hand {
     order: 1;
     flex-basis: unset;
-    margin-bottom: 0;
     transform: translateX(0);
+  }
+}
+@media (max-width: 575px) {
+  .flex-container .your-hand {
+    margin-bottom: 0;
   }
 }
 .flex-container .your-hand .heading {
   margin-bottom: 3rem;
   font-size: 23px;
   letter-spacing: 5px;
+}
+@media (max-width: 767px) {
+  .flex-container .your-hand .heading {
+    font-size: 19px;
+  }
 }
 @media (max-width: 575px) {
   .flex-container .your-hand .heading {
@@ -168,6 +182,13 @@
   position: relative;
   box-shadow: inset 0px 6px 0 2px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 767px) {
+  .flex-container .rock {
+    width: 140px;
+    height: 140px;
+    border: 20px solid hsl(349deg, 71%, 52%);
+  }
+}
 @media (max-width: 575px) {
   .flex-container .rock {
     width: 120px;
@@ -189,6 +210,13 @@
   position: relative;
   box-shadow: inset 0px 6px 0 2px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 767px) {
+  .flex-container .paper {
+    width: 140px;
+    height: 140px;
+    border: 20px solid hsl(230deg, 89%, 62%);
+  }
+}
 @media (max-width: 575px) {
   .flex-container .paper {
     width: 120px;
@@ -209,6 +237,13 @@
   position: relative;
   z-index: 10;
   box-shadow: inset 0px 6px 0 2px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 767px) {
+  .flex-container .scissors {
+    width: 140px;
+    height: 140px;
+    border: 20px solid hsl(39deg, 89%, 49%);
+  }
 }
 @media (max-width: 575px) {
   .flex-container .scissors {
@@ -235,10 +270,15 @@
   justify-content: center;
   margin: 0 100px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .flex-container .resut-play-again {
     order: 3;
     flex-basis: unset;
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .flex-container .resut-play-again {
     margin: auto;
     margin-top: -1.5rem;
   }
@@ -284,18 +324,27 @@
   margin-bottom: 4rem;
   transform: translateX(-150px);
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .flex-container .opponent-hand {
     order: 2;
     flex-basis: unset;
-    margin-bottom: 0;
     transform: translateX(0);
+  }
+}
+@media (max-width: 575px) {
+  .flex-container .opponent-hand {
+    margin-bottom: 0;
   }
 }
 .flex-container .opponent-hand .heading {
   margin-bottom: 3rem;
   font-size: 23px;
   letter-spacing: 5px;
+}
+@media (max-width: 767px) {
+  .flex-container .opponent-hand .heading {
+    font-size: 19px;
+  }
 }
 @media (max-width: 575px) {
   .flex-container .opponent-hand .heading {
@@ -306,7 +355,7 @@
     position: relative;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .flex-container .opponent-hand .heading-relative {
     position: relative;
     bottom: -6.3rem;
@@ -328,6 +377,12 @@
   position: absolute;
   bottom: 0;
   margin: auto;
+}
+@media (max-width: 767px) {
+  .flex-container .opponent-hand .dark-circle {
+    width: 140px;
+    height: 140px;
+  }
 }
 @media (max-width: 575px) {
   .flex-container .opponent-hand .dark-circle {
